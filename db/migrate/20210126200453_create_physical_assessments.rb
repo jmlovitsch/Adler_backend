@@ -1,0 +1,136 @@
+class CreatePhysicalAssessments < ActiveRecord::Migration[6.0]
+  def change
+    create_table :physical_assessments do |t|
+        t.integer :admission_id, null: false, foreign_key: true
+        t.string :author
+      t.string :skin_color
+      t.string :skin_blemished
+      t.string :skin_odor
+      t.string :skin_tugor
+      t.string :skin_temperature
+      t.string :hair_thickness
+      t.string :hair_distributed
+      t.string :hair_body
+      t.string :hair_infection
+      t.string :hair_infestation
+      t.string :nails_color
+      t.string :nails_shape
+      t.string :nails_smooth
+      t.string :nails_epidermal_contact
+      t.string :nails_blanch_test
+      t.string :head_normocephalic
+      t.string :head_symmetry
+      t.string :skull_nodules
+      t.string :skull_masses
+      t.string :skull_depressions
+      t.string :face_smooth
+      t.string :face_consistency
+      t.string :face_nodules
+      t.string :face_masses
+      t.string :eyebrows_even
+      t.string :eyebrows_symmetric
+      t.string :eyebrows_alignment
+      t.string :eyebrows_movement
+      t.string :eyelashes_distributed
+      t.string :eyelashes_curled
+      t.string :eyelids_discharges
+      t.string :eyelids_discoloration
+      t.string :eyelids_close
+      t.string :eyelids_rate
+      t.string :eyes_bulbar_conjunctiva_appearance
+      t.string :eyes_sclera_color
+      t.string :eyes_palpebral_conjunctiva_appearance
+      t.string :eyes_lacrimal_gland_edema
+      t.string :eyes_lacrimal_gland_tearing
+      t.string :eyes_cornea_transparent
+      t.string :eyes_cornea_texture
+      t.string :eyes_cornea_details
+      t.string :eyes_cornea_reaction
+      t.string :eyes_pupils_size
+      t.string :eyes_iris
+      t.string :eyes_iris_constriction
+      t.string :eyes_peripheral_visual_field_visibility
+      t.string :eyes_eyes_coordinately_moved
+      t.string :twenty_twenty
+      t.string :ears_symmetry
+      t.string :ears_color
+      t.string :ears_alignment
+      t.string :ears_mobility
+      t.string :ears_pinna
+      t.string :ears_hearing
+      t.string :nose_symmetry
+      t.string :nose_straight
+      t.string :nose_color
+      t.string :nose_discharge
+      t.string :nose_flaring
+      t.string :nose_tenderness
+      t.string :nose_lesions
+      t.string :mouth_uniformly_pink
+      t.string :mouth_moist
+      t.string :mouth_symmetric
+      t.string :mouth_texture
+      t.string :mouth_purse
+      t.string :mouth_teeth_discoloration
+      t.string :mouth_teeth_retraction_of_gums
+      t.string :mouth_teeth_color_gums
+      t.string :mouth_buccal_mucosa
+      t.string :mouth_soft
+      t.string :mouth_glistening
+      t.string :mouth_elastic
+      t.string :mouth_tongue_positioned
+      t.string :mouth_tongue_color
+      t.string :mouth_tongue_moistness
+      t.string :mouth_tongue_roughness
+      t.string :mouth_tongue_thin_whitish_coating
+      t.string :mouth_smooth_palates
+      t.string :mouth_color
+      t.string :mouth_smoothness
+      t.string :mouth_hard_palate
+      t.string :mouth_irregular_texture
+      t.string :mouth_uvula
+      t.string :mouth_uvula_position
+      t.string :neck_equal
+      t.string :neck_movement
+      t.string :neck_discomfort
+      t.string :neck_lymph_nodes_palpable
+      t.string :neck_trachea_position
+      t.string :neck_thyroid_visiblity
+      t.string :neck_ascend
+      t.string :lungs_chest_chest_wall
+      t.string :lungs_chest_tenderness
+      t.string :lungs_chest_masses
+      t.string :lungs_chest_expansion
+      t.string :lungs_chest_quiet
+      t.string :lungs_chest_rhythmic
+      t.string :lungs_chest_effort
+      t.string :spine_alignment
+      t.string :spine_shoulders
+      t.string :spine_hips
+      t.string :heart_aortic_pulsations
+      t.string :heart_pulmonic_pulsations
+      t.string :heart_heaves
+      t.string :heart_lifts
+      t.string :abdomen_unblemished_skin
+      t.string :abdomen_color
+      t.string :abdomen_symmetry
+      t.string :abdomen_jugular_visibility
+      t.string :abdomen_blanch_test
+      t.string :extremities_symmetrical_size
+      t.string :extremities_symmetrical_length
+      t.string :muscles_palpable
+      t.string :muscles_tremors
+      t.string :muscles_movements
+      t.string :bones_deformities
+      t.string :bones_tenderness
+      t.string :bones_swelling
+      t.string :joints_swelling
+      t.string :joints_tenderness
+
+
+
+
+      t.timestamps
+
+    end
+  end
+end
